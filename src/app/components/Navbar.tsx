@@ -8,7 +8,7 @@ import { useAccount } from "wagmi";
 export default function Navbar() {
 	const { address } = useAccount();
 	return (
-		<Navo className="bg-slate-900 py-3">
+		<Navo>
 			{address && (
 				<>
 					<NavbarBrand>

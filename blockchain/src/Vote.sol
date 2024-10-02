@@ -10,6 +10,7 @@ contract Vote {
 		uint256 timeCreate;
 		uint256 timeEnd;
 	}
+
 	uint private nbVote;
 	mapping(uint256 => vote) public idToVote;
 
