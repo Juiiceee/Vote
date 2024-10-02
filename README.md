@@ -10,3 +10,20 @@ npm run dev
 
 * RainbowKit
 * shadcn
+
+## Truc a faire
+
+* Vote.sol
+	* Creer un vote
+		* Description
+		* Nb de vote up
+		* Nb de vote down
+		* Date de debut
+		* Date de fin
+		* Il est finit
+	* Pouvoir up ou down
+		* Vote avec un bool
+	* Checker si:
+		* La date de fin est avant la date de creatiom
+		* Ne pas pouvoir voter apres la fin
+		* Ne pas pouvoir voter si il est finis
