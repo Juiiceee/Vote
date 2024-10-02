@@ -12,7 +12,7 @@ export default function Navbar() {
 			{address && (
 				<>
 					<NavbarBrand>
-						<Button className="font-bold text-inherit" isPush={false}>Vote</Button>
+						<Button className="font-bold text-inherit" path="/">Vote</Button>
 					</NavbarBrand>
 					<NavbarContent className="hidden sm:flex gap-4" justify="center">
 						<NavbarItem>
@@ -21,9 +21,9 @@ export default function Navbar() {
 							</Button>
 						</NavbarItem>
 						<NavbarItem isActive>
-							<Link href="#" aria-current="page">
+							<Button path="/See">
 								See all Vote
-							</Link>
+							</Button>
 						</NavbarItem>
 					</NavbarContent>
 				</>
