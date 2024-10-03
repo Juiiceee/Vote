@@ -35,9 +35,7 @@ export default function RootLayout({
 				<NextUIProvider>
 					<CustomProvider>
 						<Navbar />
-						{/* <Children> */}
 							{children}
-						{/* </Children> */}
 					</CustomProvider>
 				</NextUIProvider>
 			</body>

@@ -1,4 +1,5 @@
-export const contractAdress = "0xECe3E224C2Fad415Fc7f26B7939F6e6c317C05D0";
+// export const contractAdress = "0xECe3E224C2Fad415Fc7f26B7939F6e6c317C05D0";
+export const contractAdress = "0x203dc9c9b5185b355ea93c97e6ee7534215b078a";
 export const contractABI = [
 	{
 		"inputs": [
@@ -13,32 +14,18 @@ export const contractABI = [
 				"type": "uint256"
 			}
 		],
-		"name": "CreateVote",
-		"outputs": [],
 		"stateMutability": "nonpayable",
-		"type": "function"
+		"type": "constructor"
 	},
 	{
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "_id",
-				"type": "uint256"
-			}
-		],
+		"inputs": [],
 		"name": "VoteAgainst",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "_id",
-				"type": "uint256"
-			}
-		],
+		"inputs": [],
 		"name": "VoteFor",
 		"outputs": [],
 		"stateMutability": "nonpayable",
@@ -47,18 +34,59 @@ export const contractABI = [
 	{
 		"inputs": [
 			{
-				"internalType": "uint256",
+				"internalType": "address",
 				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "addressToVote",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getVoteDetails",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "description",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "voteUp",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "voteDown",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "timeCreate",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "timeEnd",
 				"type": "uint256"
 			}
 		],
-		"name": "idToVote",
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "voteUnit",
 		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "id",
-				"type": "uint256"
-			},
 			{
 				"internalType": "string",
 				"name": "description",
